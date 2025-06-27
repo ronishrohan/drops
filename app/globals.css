@@ -1,23 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "8-Bit Devanagari by colonelhathii";
+  src: url("/fonts/devanagari.woff2") format("woff2");
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-hover-background: var(--hover-background);
+  --color-card-background: var(--card-background);
+  --color-hover-foreground: var(--hover-foreground);
+  --color-active-background: var(--active-background);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --font-instrument-sans: var(--instrument-sans);
+  --font-inter: var(--inter);
+  --font-devanagari: "8-Bit Devanagari by colonelhathii", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base{
+  :root{
+    --background: #111111;
+    --border: #333333;
+    --foreground: #ffffff;
+    --hover-background: #fff9e6;
+    --active-background: #f7efd6;
+    --card-background: #151515;
+    --hover-foreground: #000000;
+    --accent: #b72832;
+  }
+  .light{
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
+
 
 body {
   background: var(--background);
