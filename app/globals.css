@@ -19,23 +19,29 @@
   --font-devanagari: "8-Bit Devanagari by colonelhathii", sans-serif;
 }
 
-@layer base{
-  :root{
-    --background: #111111;
-    --border: #333333;
-    --foreground: #ffffff;
-    --hover-background: #fff9e6;
-    --active-background: #f7efd6;
-    --card-background: #151515;
+@layer base {
+  :root .dark {
+    --background: #282828; /* bg0 */
+    --border: #3c3836; /* bg1 */
+    --foreground: #ebdbb2; /* fg */
+    --hover-background: #fabd2f; /* yellow (bright) */
+    --active-background: #d79921; /* yellow */
+    --card-background: #1d2021; /* bg0_h */
     --hover-foreground: #000000;
-    --accent: #b72832;
+    --accent: #fb4934; /* red */
   }
-  .light{
-    --background: #ffffff;
-    --foreground: #000000;
+
+  .light {
+    --background: #fbf1c7; /* fg0 */
+    --foreground: #3c3836; /* bg1 */
+    --border: #d5c4a1; /* bg2 */
+    --card-background: #f9f5d7; /* bg0_h */
+    --hover-background: #282828; /* yellow (bright) */
+    --active-background: #d79921; /* yellow */
+    --hover-foreground: #ffffff;
+    --accent: #cc241d; /* red */
   }
 }
-
 
 body {
   background: var(--background);
