@@ -21,7 +21,7 @@
 
 @layer base {
   :root .dark {
-    --background: #282828; /* bg0 */
+    --background: #1d2021; /* bg0 */
     --border: #3c3836; /* bg1 */
     --foreground: #ebdbb2; /* fg */
     --hover-background: #fabd2f; /* yellow (bright) */
@@ -32,7 +32,7 @@
   }
 
   .light {
-    --background: #fbf1c7; /* fg0 */
+    --background: #f9f5d7; /* fg0 */
     --foreground: #3c3836; /* bg1 */
     --border: #d5c4a1; /* bg2 */
     --card-background: #f9f5d7; /* bg0_h */

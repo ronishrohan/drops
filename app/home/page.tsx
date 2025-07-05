@@ -20,9 +20,7 @@ const GridItem = ({}: GridItemProps) => {
 const page = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1 }}
+      
       className="size-full ml-[-2px] mt-[-2px] overflow-y-scroll grid grid-cols-3 "
     >
       {Array.from({ length: 20 }).map((_, index) => (

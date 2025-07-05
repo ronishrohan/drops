@@ -1,6 +1,8 @@
-export const routes : any = {
-    "home" : {
-        title: "Home",
-        
-    }
-}
+export const routes: any = {
+  home: {
+    title: "Home",
+  },
+  drops: {
+    title: "Drop",
+  },
+};
