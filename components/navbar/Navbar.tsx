@@ -36,7 +36,9 @@ const Navbar = () => {
       </span>
       {/* <span  ></span> */}
       <span className=" h-full flex items-center  px-4 text-foreground text-sm">
-        {routes[pathname.split("/")[1]].title || "Page"}
+        {/* {pathname in routes.keys ? routes[pathname.split("/")[1]]?.title || "Page" : "Page"} */}
+        {routes[pathname.split("/")[1]]?.title || "Page"}
+
       </span>
       <motion.button
         initial={{ opacity: 0 }}
