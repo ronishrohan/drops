@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ClientLayout from "./ClientLayout";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "drops",
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClientLayout>{children}</ClientLayout>
+      <Suspense><ClientLayout>{children}</ClientLayout></Suspense>
     </html>
   );
 }
